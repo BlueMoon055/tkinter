@@ -1,0 +1,17 @@
+import tkinter as tk
+
+win = tk.Tk()
+canvas = tk.Canvas(win, bg = 'yellow', width =600, height = 600)
+canvas.create_line((200, 100 ), (250, 100) , fill = 'black')
+canvas.create_line((200, 100 ), (200, 300) , fill = 'black')
+canvas.create_line((200, 300 ), (250, 300) , fill = 'black')
+canvas.create_line((250, 300 ), (250, 100) , fill = 'black')
+canvas.create_line((350, 100), (400, 100), fill='black')
+canvas.create_line((350, 100), (350, 300), fill='black')
+canvas.create_line((350, 300), (400, 300), fill='black')
+canvas.create_line((400, 300), (400, 100), fill='black')
+canvas.create_line((150, 300), (200, 400), fill='black')
+canvas.create_line((200, 400), (400, 400), fill='black')
+canvas.create_line((400, 400), (450, 300), fill='black')
+canvas.pack()
+win.mainloop()
